@@ -1,0 +1,475 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.Product {
+  /* height: 323px; */
+  width: 100%;
+  background-color: #445162;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  margin-left: -40px;
+
+}
+
+.menu {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+  list-style-image: url(../img/check_icon.png);
+  padding-top: 25px;
+  margin-bottom: 50px;
+}
+
+.left__header {
+  margin-top: 40px;
+  margin-left: 82px;
+  width: 600px;
+}
+
+.right__header {
+  width: 469px;
+  height: 214px;
+  background-color: #ffffff;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+
+.container {
+  width: 100%;
+}
+
+.section_1 {
+  /* height: 345px; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.video {
+  /* width: 430px;
+  height: 245px; */
+  background-color: #445161;
+  margin: 50px 50px 50px;
+}
+
+.h3_left__section_1 {
+  width: 254px;
+  height: 28px;
+  color: #445161;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-top: 40px;
+  margin-left: 50px;
+}
+
+.p_left__section_1 {
+  width: 650px;
+  height: 60px;
+  margin-top: 30px;
+  margin-left: 50px;
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.Dignity {
+  padding: 35px 50px 50px 50px;
+  background-color: #F5F5F5;
+}
+
+.Dignity::after {
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.Dignity_title,
+.Scrinshots_title,
+.Reviews_title,
+.Buy_it_now_title {
+  display: block;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #445161;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.2;
+}
+
+.Dignity_list {
+  width: 540px;
+  list-style-type: none;
+  float: left;
+  padding-left: 50px;
+}
+
+.Dignity_list:nth-child(3) {
+  float: right;
+}
+
+.Dignity_list_item {
+  margin-bottom: 35px;
+  position: relative;
+
+  width: 500px;
+  height: 63px;
+  color: #333333;
+  font-family: "Arial MT";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.Dignity_list:nth-child(2)>.Dignity_list_item:nth-child(3),
+.Dignity_list:nth-child(3)>.Dignity_list_item:nth-child(3) {
+  margin: 0;
+}
+
+.Dignity_list_item:before {
+  content: "+ ";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: #445162;
+  color: white;
+  font-size: 28px;
+  font-weight: 900;
+  text-align: center;
+  font-style: oblique;
+  line-height: 32px;
+  position: absolute;
+  top: 0;
+  left: -50px;
+}
+
+.Scrinshots {
+  padding: 50px;
+  background-color: #FFFFFF;
+
+}
+
+.Scrinshots_content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Scrinshots_item {
+  width: 575px;
+
+}
+
+.Scrinshots_img {
+  float: left;
+  padding: 0 15px 30px 0;
+}
+
+.Scrinshots_item:nth-child(3)>.Scrinshots_img,
+.Scrinshots_item:nth-child(4)>.Scrinshots_img {
+  padding-bottom: 0;
+}
+
+.Scrinshots_item_title {
+  color: #445161;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.Scrinshots_text {
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.Reviews {
+  padding: 50px;
+  background-color: #F5F5F5;
+
+}
+
+.Reviews_content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Reviews_user {
+  float: right;
+  width: 440px;
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  background-color: #EBEBEB;
+  border-radius: 5px;
+  margin: -7px 0 21px 23px;
+  padding: 20px;
+  position: relative;
+}
+
+.Reviews_item:nth-child(3)>.Reviews_user,
+.Reviews_item:nth-child(4)>.Reviews_user {
+  margin-bottom: 0;
+}
+
+.Reviews_user::before {
+  position: absolute;
+  content: '';
+  left: -20px;
+  bottom: 80px;
+  border: 10px solid transparent;
+  border-right: 10px solid #EBEBEB;
+}
+
+.Reviews_user_name {
+  display: block;
+  color: #989898;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-top: 5px;
+}
+
+.Buy_it_now {
+  padding: 32px 147px 50px 145px;
+}
+
+.Buy_all_items {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+}
+
+.buy_item {
+  display: block;
+  width: 300px;
+  background-color: #445161;
+  text-align: center;
+  border-radius: 5px;
+  padding-top: 10px;
+}
+
+.buy_name {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+
+}
+
+.buy_name_bg {
+  width: 296px;
+  border: 2px solid #445162;
+  background-color: whitesmoke;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.buy_name_bg_price {
+  color: #445162;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 70px;
+}
+
+.buy_ol {
+  text-align: left;
+  padding: 10px 20px 10px 20px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+
+}
+
+.buy_o {
+  list-style-position: inside;
+}
+
+.buy_Premium {
+  width: 300px;
+  background-color: #445161;
+}
+
+.buy_Lux {
+  width: 300px;
+  background-color: #445161;
+}
+
+.buy_buttom {
+  width: 260px;
+  background-color: #ffffff;
+  text-align: center;
+  margin: 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-top: 0;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.buy_buttom:hover {
+	background: #445162;
+	color: whitesmoke;
+	box-shadow: inset 0 0 0 3px whitesmoke;
+}
+
+.buy_buttom_text {
+  display: block;
+  color: #445161;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.Contacts {
+  background-color: #445161;
+  padding-top: 50px;
+  padding-left: 250px;
+  padding-right: 250px;
+  text-align: center;
+
+}
+
+.Contacts_title {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.Contacts_content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding-bottom: 50px;
+}
+
+.Contacts_left {
+  width: 500px;
+}
+
+.person,
+.email {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  color: #445162;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.text {
+  width: 100%;
+  height: 170px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.button_send {
+  width: 140px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  color: #445162;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+}
+
+.button_send:hover {
+	background: #445162;
+	color: whitesmoke;
+	box-shadow: inset 0 0 0 3px whitesmoke;
+}
+
+
+
+.Contacts_right {
+  width: 240px;
+  text-align: left;
+}
+
+
+.fa-skype,
+.fa-whatsapp,
+.fa-at,
+.fa-phone {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+
+.fa-twitter,
+.fa-facebook-f,
+.fa-invision,
+.fa-google,
+.fa-youtube {
+  font-size: 36px;
+  padding-right: 5px;
+  padding-bottom: 0;
+  color: whitesmoke;
+}
+
+.Copyright_footer {
+  display: block;
+  background-color: whitesmoke;
+  text-align: center;
+  font-size: 16px;
+  line-height: 32px;
+}
