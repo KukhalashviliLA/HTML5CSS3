@@ -8,8 +8,7 @@ body {
   margin: 0 auto;
 }
 
-.Product {
-  /* height: 323px; */
+.product {
   width: 100%;
   background-color: #445162;
   display: flex;
@@ -23,7 +22,6 @@ body {
   font-size: 60px;
   font-weight: 400;
   margin-left: -40px;
-
 }
 
 .menu {
@@ -56,15 +54,12 @@ body {
 }
 
 .section_1 {
-  /* height: 345px; */
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
 .video {
-  /* width: 430px;
-  height: 245px; */
   background-color: #445161;
   margin: 50px 50px 50px;
 }
@@ -93,23 +88,21 @@ body {
   line-height: 24px;
 }
 
-.Dignity {
+.dignity {
   padding: 35px 50px 50px 50px;
   background-color: #F5F5F5;
 }
 
-.Dignity::after {
+.dignity::after {
   content: "";
   display: block;
   width: 100%;
   clear: both;
 }
 
-.Dignity_title,
-.Scrinshots_title,
-.Reviews_title,
-.Buy_it_now_title {
+.dignity_title, .scrinshots_title, .reviews_title, .buy_it_now_title {
   display: block;
+  width: 100%;
   margin-bottom: 24px;
   text-align: center;
   color: #445161;
@@ -118,21 +111,20 @@ body {
   line-height: 1.2;
 }
 
-.Dignity_list {
+.dignity_list {
   width: 540px;
   list-style-type: none;
   float: left;
   padding-left: 50px;
 }
 
-.Dignity_list:nth-child(3) {
+.dignity_list:nth-child(3) {
   float: right;
 }
 
-.Dignity_list_item {
+.dignity_list_item {
   margin-bottom: 35px;
   position: relative;
-
   width: 500px;
   height: 63px;
   color: #333333;
@@ -142,12 +134,11 @@ body {
   line-height: 24px;
 }
 
-.Dignity_list:nth-child(2)>.Dignity_list_item:nth-child(3),
-.Dignity_list:nth-child(3)>.Dignity_list_item:nth-child(3) {
+.dignity_list:nth-child(2)>.dignity_list_item:nth-child(3), .dignity_list:nth-child(3)>.dignity_list_item:nth-child(3) {
   margin: 0;
 }
 
-.Dignity_list_item:before {
+.dignity_list_item:before {
   content: "+ ";
   display: block;
   width: 32px;
@@ -164,34 +155,34 @@ body {
   left: -50px;
 }
 
-.Scrinshots {
-  padding: 50px;
+.scrinshots {
+  padding: 50px 50px 15px 50px;
   background-color: #FFFFFF;
-
-}
-
-.Scrinshots_content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.Scrinshots_item {
-  width: 575px;
+/* .Scrinshots_content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+} */
 
+.scrinshots_item {
+  width: 575px;
 }
 
-.Scrinshots_img {
+.scrinshots_img {
   float: left;
   padding: 0 15px 30px 0;
 }
 
-.Scrinshots_item:nth-child(3)>.Scrinshots_img,
-.Scrinshots_item:nth-child(4)>.Scrinshots_img {
+.scrinshots_item:nth-child(3)>.scrinshots_img, .scrinshots_item:nth-child(4)>.scrinshots_img {
   padding-bottom: 0;
 }
 
-.Scrinshots_item_title {
+.scrinshots_item_title {
   color: #445161;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
@@ -199,7 +190,7 @@ body {
   line-height: 30px;
 }
 
-.Scrinshots_text {
+.scrinshots_text {
   color: #333333;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -207,19 +198,18 @@ body {
   line-height: 24px;
 }
 
-.Reviews {
+.reviews {
   padding: 50px;
   background-color: #F5F5F5;
-
 }
 
-.Reviews_content {
+.reviews_content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.Reviews_user {
+.reviews_user {
   float: right;
   width: 440px;
   color: #333333;
@@ -235,12 +225,11 @@ body {
   position: relative;
 }
 
-.Reviews_item:nth-child(3)>.Reviews_user,
-.Reviews_item:nth-child(4)>.Reviews_user {
+.reviews_item:nth-child(3)>.reviews_user, .reviews_item:nth-child(4)>.reviews_user {
   margin-bottom: 0;
 }
 
-.Reviews_user::before {
+.reviews_user::before {
   position: absolute;
   content: '';
   left: -20px;
@@ -249,7 +238,7 @@ body {
   border-right: 10px solid #EBEBEB;
 }
 
-.Reviews_user_name {
+.reviews_user_name {
   display: block;
   color: #989898;
   font-family: Arial, Helvetica, sans-serif;
@@ -260,15 +249,14 @@ body {
   margin-top: 5px;
 }
 
-.Buy_it_now {
-  padding: 32px 147px 50px 145px;
+.buy_it_now {
+  padding: 35px 147px 50px 145px;
 }
 
-.Buy_all_items {
+.buy_all_items {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-
 }
 
 .buy_item {
@@ -286,7 +274,6 @@ body {
   font-size: 24px;
   font-weight: 400;
   line-height: 30px;
-
 }
 
 .buy_name_bg {
@@ -298,11 +285,14 @@ body {
 }
 
 .buy_name_bg_price {
+  display: block;
   color: #445162;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 40px;
   font-weight: 400;
-  line-height: 70px;
+  line-height: 40px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .buy_ol {
@@ -313,7 +303,6 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-
 }
 
 .buy_o {
@@ -342,16 +331,22 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-transform: uppercase;
-  margin-top: 0;
-  padding-top: 14px;
-  padding-bottom: 14px;
 }
 
-.buy_buttom:hover {
-	background: #445162;
-	color: whitesmoke;
-	box-shadow: inset 0 0 0 3px whitesmoke;
+.buy_buttom:hover, .button_send:hover {
+  background: #445162;
+  color: whitesmoke;
+  box-shadow: inset 0 0 0 3px whitesmoke;
+}
+
+.buy_buttom:active, .button_send:active {
+  background: #ffffff;
+  color: #445162;
+  box-shadow: inset 0 0 0 3px whitesmoke;
 }
 
 .buy_buttom_text {
@@ -366,16 +361,15 @@ body {
   padding-bottom: 14px;
 }
 
-.Contacts {
+.contacts {
   background-color: #445161;
   padding-top: 50px;
   padding-left: 250px;
   padding-right: 250px;
   text-align: center;
-
 }
 
-.Contacts_title {
+.contacts_title {
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
@@ -383,19 +377,22 @@ body {
   line-height: 36px;
 }
 
-.Contacts_content {
+.contacts_content {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
   padding-bottom: 50px;
 }
 
-.Contacts_left {
+.contacts_left {
   width: 500px;
 }
 
-.person,
-.email {
+.person {
+  text-transform: capitalize;
+}
+
+.person, .email {
   width: 100%;
   height: 40px;
   margin-bottom: 20px;
@@ -404,6 +401,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  outline: none;
 }
 
 .text {
@@ -414,6 +412,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 24px;
+  outline: none;
 }
 
 .button_send {
@@ -431,42 +430,27 @@ body {
   outline: none;
 }
 
-.button_send:hover {
-	background: #445162;
-	color: whitesmoke;
-	box-shadow: inset 0 0 0 3px whitesmoke;
-}
-
-
-
-.Contacts_right {
+.contacts_right {
   width: 240px;
   text-align: left;
 }
 
-
-.fa-skype,
-.fa-whatsapp,
-.fa-at,
-.fa-phone {
+.fa-skype, .fa-whatsapp, .fa-at, .fa-phone {
+  display: block;
   color: #ffffff;
   font-size: 20px;
   line-height: 20px;
   margin-bottom: 30px;
 }
 
-.fa-twitter,
-.fa-facebook-f,
-.fa-invision,
-.fa-google,
-.fa-youtube {
+.fa-twitter, .fa-facebook-f, .fa-invision, .fa-google, .fa-youtube {
   font-size: 36px;
   padding-right: 5px;
   padding-bottom: 0;
   color: whitesmoke;
 }
 
-.Copyright_footer {
+.copyright_footer {
   display: block;
   background-color: whitesmoke;
   text-align: center;
