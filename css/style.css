@@ -60,6 +60,7 @@ body {
 }
 
 .video {
+  width: 469px;
   background-color: #445161;
   margin: 50px 50px 50px;
 }
